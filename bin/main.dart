@@ -1,5 +1,5 @@
-import 'package:instalasi_tue/services/climbing_gear_service.dart';
-import 'package:instalasi_tue/models/climbing_gear_model.dart';
+import 'package:crud_dart/services/climbing_gear_service.dart';
+import 'package:crud_dart/models/climbing_gear_model.dart';
 import 'dart:io';
 
 void main() {
@@ -39,7 +39,8 @@ void main() {
         } else {
           print("\nDaftar Barang Panjat:");
           for (var gear in gearList) {
-            print("${gear.id}. ${gear.itemName} - Dipinjam: ${gear.isBorrowed}");
+            print(
+                "${gear.id}. ${gear.itemName} - Dipinjam: ${gear.isBorrowed}");
           }
         }
         break;
@@ -71,6 +72,5 @@ void main() {
       default:
         print("Pilihan tidak valid. Silakan coba lagi.");
     }
-
   } while (input != '5');
 }

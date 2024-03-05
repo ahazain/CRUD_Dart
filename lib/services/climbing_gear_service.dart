@@ -1,6 +1,6 @@
 // lib/services/climbing_gear_service.dart
 
-import 'package:instalasi_tue/models/climbing_gear_model.dart';
+import 'package:crud_dart/models/climbing_gear_model.dart';
 
 class ClimbingGearService {
   List<ClimbingGear> gearList = [];
